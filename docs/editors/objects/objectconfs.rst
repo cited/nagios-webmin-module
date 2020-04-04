@@ -23,9 +23,10 @@ To access the Objects file editor, click the Objects icon as show below.
   
 From here you can edit any existing file within the NAGIOS/obects directory.
 
-      ..image:: _static/nagios-obect-select.png
 
-      
+      .. image:: _static/nagios-obect-select.png
+
+     
 
 Creating a New File
 =====================
