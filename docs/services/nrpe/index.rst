@@ -11,50 +11,54 @@ Nrpe Service
 **********************
 
 .. contents:: Table of Contents
-Edit Config
-=============
+Overview
+==================
 
-.. image:: _static/config-tab.png
+Nrpe is installed as a service.
 
-The Config tab is used to edit the following files::
+The service file is located under::
 
-   server.xml
-   web.xml
-   context.xml
-   tomcat-users.xml
-   setenv.sh
+      /lib/systemd/system/nrpe.service
+      
+It has the contents below::
+
+.. code-block:: bash
+   :linenos:
    
-These files can, of course, be edited via the file system or VI as well.
+      [Unit]
+      Description=Nagios Remote Plugin Executor
+      Documentation=http://www.nagios.org/documentation
+      After=var-run.mount nss-lookup.target network.target local-fs.target time-sync.target
+      Before=getty@tty1.service plymouth-quit.service xdm.service
+      Conflicts=nrpe.socket
 
+      [Install]
+      WantedBy=multi-user.target
 
-Apps
-====
-.. image:: _static/apps-tab.png
+      [Service]
+      Type=simple
+      Restart=on-abort
+      PIDFile=/usr/local/nagios/var/nrpe.pid
+      RuntimeDirectory=nrpe
+      RuntimeDirectoryMode=0755
+      ExecStart=/usr/local/nagios/bin/nrpe -c /usr/local/nagios/etc/nrpe.cfg -f
+      ExecReload=/bin/kill -HUP $MAINPID
+      ExecStopPost=/bin/rm -f /usr/local/nagios/var/nrpe.pid
+      TimeoutStopSec=60
+      User=nagios
+      Group=nagios
+      PrivateTmp=true
+      OOMScoreAdjust=-500
 
-The Apps manager allows you to deploy, undeploy, and redeploy WAR files in Apache Tomcat
+Start and Stop
+==============
 
-   
-Java
-=========
-.. image:: _static/java-tab.png
+The Nrpe service can be started and stopped via the module or via command line.
 
-The Java tab is used during installation as well as for updating of JDK.
+To start and stop via the module, go to Servers > Nagios and click the Start or Stop button:
 
-It can also be used to un-install the selected JDK and replace it with a new version.
+   .. image:: _static/nrpe-service.png
 
+To start and stop via command line, as root, issue::
 
-.. image:: _static/java-installed.png
-
-
-.. note::
-    When installing or removing, there is an option to set as System default.
-
-
-MapJS
-=========
-
-The MapJS tab is simply a file browser for viewing and editing both OpenLayers and LeafletJS files.
-
-
-
-
+   service nrpe stop | start
