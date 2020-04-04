@@ -6,9 +6,9 @@
 .. |EXAMPLE| image:: static/yi_jing_01_chien.jpg
    :width: 1em
 
-**********************
-GeoServer
-**********************
+******************************
+Main Configuraton Files
+******************************
 
 .. contents:: Table of Contents
 Overview
