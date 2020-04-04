@@ -6,9 +6,9 @@
 .. |EXAMPLE| image:: static/yi_jing_01_chien.jpg
    :width: 1em
 
-**********************
-General
-**********************
+***************************
+Object Configuration Files
+***************************
 
 .. contents:: Table of Contents
 Edit Config
