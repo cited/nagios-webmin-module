@@ -50,17 +50,17 @@ The template is commented.
 .. code-block:: bash
    :linenos:
 
-    # Host configuration file
+      # Host configuration file
 
-   define host {
+      define host {
         use                          linux-server
         host_name                    <HOST>
         alias                         <HOST>
         address                       <IP>
         register                     1
-   }
+      }
 
-   define service {
+      define service {
       host_name                       <HOST>
       service_description             PING
       check_command                   check_ping!100.0,20%!500.0,60%
@@ -74,9 +74,9 @@ The template is commented.
       notification_period             24x7
       notifications_enabled           1
       register                        1
-   }
+      }
 
-   define service {
+      define service {
       host_name                       <HOST>
       service_description             Check SSH
       check_command                   check_ssh!-p 3838
@@ -90,9 +90,9 @@ The template is commented.
       notification_period             24x7
       notifications_enabled           1
       register                        1
-   }
+      }
 
-   define service {
+      define service {
       host_name                       <HOST>
       service_description             Check HTTP
       check_command                   check_http
@@ -106,7 +106,7 @@ The template is commented.
       notification_period             24x7
       notifications_enabled           1
       register                        1
-   }
+      }
 
 
    
