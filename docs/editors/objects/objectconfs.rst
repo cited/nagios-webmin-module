@@ -7,7 +7,7 @@
    :width: 1em
 
 ***************************
-Ibject Configuration Files
+Objects Configuration Files
 ***************************
 
 .. contents:: Table of Contents
@@ -116,6 +116,9 @@ The template is commented.
       }
 
 
+
+.. note::
+    To create your own template, simply update the template.cfg located at /usr/share/webmin/nagios.
    
 Restart Nagios
 =============
