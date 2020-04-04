@@ -141,10 +141,7 @@ Make the required edits and click Save.
 Conf Location
 ===============
 
-By default, all conf files are saved to /usr/local/nagios/obejcts/
-
-      .. image:: _static/domainmap-conf-location.png
-      
+By default, all conf files are saved to /usr/local/nagios/obejcts/   
 
 
 
