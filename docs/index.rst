@@ -16,8 +16,8 @@ Nagios Module
     :maxdepth: 3
     :caption: Editors
 
-    components/nagios/nagiosconfs
-    components/objects/objectconfs
+    editors/nagios/nagiosconfs
+    editors/objects/objectconfs
 
     
 .. toctree::
