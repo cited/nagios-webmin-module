@@ -20,7 +20,10 @@ The service file is located under::
 
       /lib/systemd/system/nrpe.service
       
-It has the contents below::
+It has the contents below:
+
+.. code-block:: bash
+   :linenos:
 
       [Unit]
       Description=Nagios Remote Plugin Executor
