@@ -1,0 +1,24 @@
+index_title=Nagios
+index_root=The root directory is $1.
+
+index_start=Start Nagios
+index_startmsg=Click to start Nagios
+index_stop=Stop Nagios
+index_stopmsg=Click to stop Nagios
+
+index_return=Nagios
+
+manual_title=Nagios
+manual_ecannot=You are not allowed to edit the file
+manual_ok=Edit
+manual_efile=Selected file is not part of configuration
+manual_file=Edit config file:
+manual_edata=Nothing entered!
+manual_err=Failed to save config file
+
+objects_title=Objects
+
+create_ok=Create
+create_cfg_file=New Filename:
+
+setup_title=Setup
