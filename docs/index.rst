@@ -24,14 +24,13 @@ Nagios Module
     :maxdepth: 2
     :caption: Services
 
-    services/nagios
-    services/nrpe
+    services/nagios/index
+    services/nrpe/index
 
 .. toctree::
     :maxdepth: 2
     :caption: Resources
 
-    resources/css
     resources/security
     resources/support
     resources/commercial
