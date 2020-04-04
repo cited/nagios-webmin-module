@@ -17,9 +17,14 @@ Editing Files
 
 To access the Objects file editor, click the Objects icon as show below.
 
-      .. image:: _static/domainmap-tab.png
+      .. image:: _static/nagios-obects-tab.png
+
       
+  
 From here you can edit any existing file within the NAGIOS/obects directory.
+
+      ..image:: _static/nagios-obect-select.png 	
+
       
 
 Creating a New File
@@ -31,14 +36,14 @@ Enter a new filename.cfg and click the Create button.
 
 Give your file a name that will make it easy to identify, such as myconf.cfg
    
-      .. image:: _static/domainmap-conf.png
-      
+      .. image:: _static/nagios-new-cfg.png 	
+  
 
 Click the Create button.
       
 The Create button will load the template below.
 
-      .. image:: _static/domainmap-created.png
+      .. image:: _static/nagios-obect-select-new.png
 
 The template is commented.
 
