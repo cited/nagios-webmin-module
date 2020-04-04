@@ -49,6 +49,7 @@ It has the contents below::
       Group=nagios
       PrivateTmp=true
       OOMScoreAdjust=-500
+      
 
 Start and Stop
 ==============
