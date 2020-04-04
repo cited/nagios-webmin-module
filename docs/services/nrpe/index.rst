@@ -23,8 +23,7 @@ The service file is located under::
 It has the contents below::
 
 .. code-block:: bash
-   :linenos:
-   
+   :linenos: 
       [Unit]
       Description=Nagios Remote Plugin Executor
       Documentation=http://www.nagios.org/documentation
@@ -50,6 +49,7 @@ It has the contents below::
       PrivateTmp=true
       OOMScoreAdjust=-500
       
+The      
 
 Start and Stop
 ==============
