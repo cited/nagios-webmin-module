@@ -7,7 +7,7 @@
    :width: 1em
 
 **********************
-General
+Nrpe Service
 **********************
 
 .. contents:: Table of Contents
