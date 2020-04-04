@@ -6,9 +6,9 @@
 .. |EXAMPLE| image:: static/yi_jing_01_chien.jpg
    :width: 1em
 
-*************************
-Main Configuration Files
-*************************
+***************************
+Ibject Configuration Files
+***************************
 
 .. contents:: Table of Contents
 
@@ -25,6 +25,7 @@ From here you can edit any existing file within the NAGIOS/obects directory.
 Creating a New File
 =====================
 
+You can create a new service file from a template via the editor.
 
 Enter a new filename.cfg and click the Create button.
 
@@ -113,13 +114,13 @@ The template is commented.
 Restart Nagios
 =============
 
-For the mapping to take effect, you must restart Apache HTTPD server.
+For the new cfg to register, you must restart Nagios.
 
-This can be done via Servers > Apache Webserver in your control panel.
+This can be done via Servers > Nagios in your control panel.
 
 It can also be done via command line using::
 
-    service httpd restart
+    systemctl restart nagios.service
     
  
 
@@ -134,74 +135,10 @@ Make the required edits and click Save.
 Conf Location
 ===============
 
-By default, all conf files are saved to /etc/httpd/conf.d
+By default, all conf files are saved to /usr/local/nagios/obejcts/
 
       .. image:: _static/domainmap-conf-location.png
       
-
-
-
-
-CFG Conf File
-==============
-
-# Host configuration file
-
-define host {
-        use                          linux-server
-        host_name                    <HOST>
-        alias                         <HOST>
-        address                       <IP>
-        register                     1
-}
-
-define service {
-      host_name                       <HOST>
-      service_description             PING
-      check_command                   check_ping!100.0,20%!500.0,60%
-      max_check_attempts              2
-      check_interval                  2
-      retry_interval                  2
-      check_period                    24x7
-      check_freshness                 1
-      contact_groups                  admins,slackmins
-      notification_interval           2
-      notification_period             24x7
-      notifications_enabled           1
-      register                        1
-}
-
-define service {
-      host_name                       <HOST>
-      service_description             Check SSH
-      check_command                   check_ssh!-p 3838
-      max_check_attempts              2
-      check_interval                  2
-      retry_interval                  2
-      check_period                    24x7
-      check_freshness                 1
-      contact_groups                  admins
-      notification_interval           2
-      notification_period             24x7
-      notifications_enabled           1
-      register                        1
-}
-
-define service {
-      host_name                       <HOST>
-      service_description             Check HTTP
-      check_command                   check_http
-      max_check_attempts              2
-      check_interval                  2
-      retry_interval                  2
-      check_period                    24x7
-      check_freshness                 1
-      contact_groups                  admins
-      notification_interval           2
-      notification_period             24x7
-      notifications_enabled           1
-      register                        1
-}
 
 
 
