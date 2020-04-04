@@ -11,6 +11,7 @@ Nagios Module
    installing
    wizard
    webmin
+   access
    
 .. toctree::
     :maxdepth: 3
