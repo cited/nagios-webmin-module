@@ -25,11 +25,13 @@ From here you can edit any existing file within the NAGIOS/obects directory.
 
 
       .. image:: _static/nagios-obect-select.png
+      
 
+Once you have completed any edits, click the Save and Close button and restart Nagios.
      
 
 Creating a New File
-=====================
+===================
 
 You can create a new service file from a template via the editor.
 
@@ -48,11 +50,19 @@ The Create button will load the template below.
 
 The template is commented.
 
-1.  Replace all instances of HOST with the host you have added.
+1.  Replace all instances of <HOST> with the host you have added.
 
-2.  Click Save and Close
+2.  Replace <IP> with the host IP
 
-3.  Restart Nagios for the new cfg to register
+3.  Click Save and Close
+
+4.  Restart Nagios for the new cfg to register
+
+
+Template File
+==============
+
+
 
 .. code-block:: bash
    :linenos:
@@ -120,6 +130,7 @@ The template is commented.
 .. note::
     To create your own template, simply update the template.cfg located at /usr/share/webmin/nagios.
    
+
 Restart Nagios
 =============
 
