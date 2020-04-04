@@ -27,14 +27,19 @@ Nagios Module
 
     services/nagios/index
     services/nrpe/index
+    
+    
+.. toctree::
+    :maxdepth: 2
+    :caption: Nrpe Client
+    
+    client/nrpe/index
 
 .. toctree::
     :maxdepth: 2
     :caption: Resources
 
     resources/security
-    resources/support
-    resources/commercial
     resources/license
     
     
