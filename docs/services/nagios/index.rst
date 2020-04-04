@@ -22,7 +22,7 @@ The service file is located under::
       
 It has the contents below::
 
-.. code-block:: console
+.. code-block:: bash
    :linenos:
    
       [Unit]
