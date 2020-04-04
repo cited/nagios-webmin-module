@@ -12,9 +12,9 @@ Default User and Password
 
 The default user name is::
 
-  nagiosadmin
+  nagiosmin
 
-A unique password is created and saved to::
+A unique password for HTTP access is created and saved to::
 
   /etc/webmin/nagios/aut.txt
   
