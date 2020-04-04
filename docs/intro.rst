@@ -12,7 +12,7 @@ The moudle has been tested on CentOS 7 and Ubuntu 18.
 
 All installed components are non-forked and un-modified and installed via the projects archive.
 
-.. image:: _static/geohelm-header.png
+.. image:: _static/nagios-main.png
 
 
 System Requirements
