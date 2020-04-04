@@ -7,7 +7,7 @@
    :width: 1em
 
 **********************
-GeoServer
+Nagios Service
 **********************
 
 .. contents:: Table of Contents
