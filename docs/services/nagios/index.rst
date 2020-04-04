@@ -20,7 +20,7 @@ The service file is located under::
 
       /lib/systemd/system/nagios.service
       
-It has the contents below::
+It has the contents below:
 
 .. code-block:: bash
    :linenos:
