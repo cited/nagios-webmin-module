@@ -25,21 +25,21 @@ It has the contents below::
 .. code-block:: console
    :linenos:
    
-   [Unit]
-   Description=Nagios Core 4.4.5
-   Documentation=https://www.nagios.org/documentation
-   After=network.target local-fs.target
+      [Unit]
+      Description=Nagios Core 4.4.5
+      Documentation=https://www.nagios.org/documentation
+      After=network.target local-fs.target
 
-   [Service]
-   Type=forking
-   ExecStartPre=/usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
-   ExecStart=/usr/local/nagios/bin/nagios -d /usr/local/nagios/etc/nagios.cfg
-   ExecStop=/bin/kill -s TERM ${MAINPID}
-   ExecStopPost=/bin/rm -f /usr/local/nagios/var/rw/nagios.cmd
-   ExecReload=/bin/kill -s HUP ${MAINPID}
+      [Service]
+      Type=forking
+      ExecStartPre=/usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+      ExecStart=/usr/local/nagios/bin/nagios -d /usr/local/nagios/etc/nagios.cfg
+      ExecStop=/bin/kill -s TERM ${MAINPID}
+      ExecStopPost=/bin/rm -f /usr/local/nagios/var/rw/nagios.cmd
+      ExecReload=/bin/kill -s HUP ${MAINPID}
 
-   [Install]
-   WantedBy=multi-user.target
+      [Install]
+      WantedBy=multi-user.target
 
 Start and Stop
 ==============
@@ -48,7 +48,7 @@ The Nagios service can be started and stopped via the module or via command line
 
 To start and stop via the module, go to Servers > Nagios and click the Start or Stop button:
 
-   .. image:: _static/start_service.png
+   .. image:: _static/nagios-service.png
 
 To start and stop via command line, as root, issue::
 
