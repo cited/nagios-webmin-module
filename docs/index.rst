@@ -39,7 +39,7 @@ Nagios Module
     :maxdepth: 2
     :caption: Resources
 
-    resources/security
+    resources/nagios
     resources/license
     
     
