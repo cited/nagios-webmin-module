@@ -17,7 +17,7 @@ copyright = u'2020 Cited Inc.'
 slug = re.sub(r'\W+', '-', project.lower())
 version = __version__
 release = __version__
-author = u'cited'
+author = u'Cited, Inc'
 copyright = author
 language = 'en'
 
