@@ -7,7 +7,7 @@ Nagios Module for Webmin.  Install and Manage Nagios Core and nrpe.
 
 # Install via script:
 
-      wget https://raw.githubusercontent.com/cited/nagios-webmin-module/scripts/pre-install.sh
+      wget https://raw.githubusercontent.com/cited/nagios-webmin-module/master/scripts/pre-install.sh
       chmod + x pre-install.sh
       ./pre-install.sh
 
