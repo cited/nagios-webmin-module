@@ -31,7 +31,7 @@ Nagios Module
     
 .. toctree::
     :maxdepth: 2
-    :caption: Nrpe Client
+    :caption: Nrpe Agent
     
     client/nrpe/index
 
