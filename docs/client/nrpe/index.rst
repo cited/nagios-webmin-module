@@ -7,7 +7,7 @@
    :width: 1em
 
 **********************
-Nrpe Client
+Nrpe Agent
 **********************
 
 .. contents:: Table of Contents
