@@ -1,7 +1,8 @@
 
 # Nagios Webmin Module
 
-[![Documentation Status](https://readthedocs.org/projects/tomcat-webmin-module/badge/?version=latest)](https://tomcat-module.citedcorp.com/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/nagios-webmin-module/badge/?version=latest)](https://nagios-module.citedcorp.com/en/latest/?badge=latest)
+
 # Info
 Nagios Module for Webmin.  Install and Manage Nagios Core and nrpe.
 
