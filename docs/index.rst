@@ -40,6 +40,7 @@ Nagios Module
     :caption: Resources
 
     resources/nagios
+    resources/support
     resources/license
     
     
