@@ -12,7 +12,7 @@ On a fresh CentOS 7 or Ubuntu 18 installation, the fastest method is to use the 
 .. code-block:: console
    :linenos:
    
-   wget wget https://raw.githubusercontent.com/cited/nagios-webmin-module/scripts/pre-install.sh
+   wget wget https://raw.githubusercontent.com/cited/nagios-webmin-module/master/scripts/pre-install.sh
    chmod +x pre-install.sh
    ./pre-install.sh
     
