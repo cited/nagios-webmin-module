@@ -13,7 +13,7 @@ from sphinx_rtd_theme import __version__
 
 
 project = u'Nagios Webmin Module'
-copyright = u'2020, Cited, Inc.'
+copyright = u'2020 Cited Inc.'
 slug = re.sub(r'\W+', '-', project.lower())
 version = __version__
 release = __version__
