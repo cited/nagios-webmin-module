@@ -27,7 +27,7 @@ When the script completes, you will see the message below:
    /opt ~
    Installed Nagios Module in /usr/share/webmin/certbot (336 kb)
    ~
-   Nagios is now installed. Go to Servers > GeoHelm to complete installation
+   Nagios is now installed. Go to Servers > Nagios to complete installation
 
 
 .. note::
