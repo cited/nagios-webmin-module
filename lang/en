@@ -2,13 +2,19 @@ index_title=Nagios
 index_root=The root directory is $1.
 
 index_start=Start Nagios
-index_startmsg=Click to start Nagios
+index_startmsg=Click to start Nagios Service
 index_stop=Stop Nagios
-index_stopmsg=Click to stop Nagios
+index_stopmsg=Click to stop Nagios Service
+
+
+index_start_nrpe=Start Nrpe
+index_startmsg_nrpe=Click to start Nrpe Service
+index_stop_nrpe=Stop Nrpe
+index_stopmsg_nrpe=Click to stop Nrpe Service
 
 index_return=Nagios
 
-manual_title=Nagios
+manual_title=Main Confs
 manual_ecannot=You are not allowed to edit the file
 manual_ok=Edit
 manual_efile=Selected file is not part of configuration
