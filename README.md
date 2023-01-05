@@ -30,7 +30,7 @@ Go to Servers->Nagios and complete the installtion Wizard.
 # Notes
 
 ## **Ubuntu**
-Tested on Ubuntu 18
+Tested on Ubuntu 18 and 20 LTS
 
 ## **Readhat/Fedora/CentOS**
 Tested on CentOS 7x64
